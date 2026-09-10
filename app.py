@@ -51,7 +51,6 @@ st.markdown("""
 
     /* Hide default Streamlit chrome */
     #MainMenu,
-    header,
     footer {
         visibility: hidden;
     }
