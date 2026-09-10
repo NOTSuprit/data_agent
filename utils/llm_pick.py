@@ -15,15 +15,15 @@ def pick_llm(level: str):
     """
     if level.lower() == "low":
         # llm = ChatAnthropic(model_name="claude-haiku-4-5", temperature=0)
-        llm = ChatOpenAI(model_name="gpt-5.6-luna", temperature=0,model_kwargs={
+        llm = ChatOpenAI(model_name="gpt-5.4", temperature=0,model_kwargs={
         "reasoning_effort": "none"
         })
     elif level.lower() == "medium":
-        llm = ChatOpenAI(model_name="gpt-5.6-terra", temperature=0,model_kwargs={
+        llm = ChatOpenAI(model_name="gpt-5.4", temperature=0,model_kwargs={
         "reasoning_effort": "none"
     })
     elif level.lower() == "high":
-        llm = ChatOpenAI(model_name="gpt-5.6-sol", temperature=0,model_kwargs={
+        llm = ChatOpenAI(model_name="gpt-5.4", temperature=0,model_kwargs={
         "reasoning_effort": "none"
     })
     elif level.lower() == "claude":
