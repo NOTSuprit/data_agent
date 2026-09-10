@@ -55,8 +55,8 @@ def prompt_query_context(state: AgentSchema) -> AgentSchema:
     ready to be executed without any modifications.
 
     If the user's question asks about database tables, columns, or schema,
-you MUST include ALL tables and ALL columns available in the provided
-schema. Do not summarize, omit, or truncate any tables or columns.  
+    you MUST include ALL tables and ALL columns available in the provided
+    schema. Do not summarize, omit, or truncate any tables or columns.  
     
     User's Original Query: {curated_question}
 
