@@ -186,8 +186,9 @@ st.markdown("""
         line-height: 1.5;
     }
 
-    .cursor {
+ .cursor {
     display: inline-block;
+    color: var(--accent) !important;
     animation: cursor-blink 1s steps(1) infinite;
 }
 
