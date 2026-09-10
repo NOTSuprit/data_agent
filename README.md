@@ -2,10 +2,8 @@
 
 A sophisticated multi-agent system for intelligent data processing and analysis using LangGraph. This project demonstrates a complete implementation of an agentic architecture with specialized sub-agents for SQL operations and ETL workflows.
 
-## YouTube Tutorial
-https://youtu.be/7yOmi4IX-Rs?si=_NGAHOomEPocRoqt
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#overview)
 - [Architecture](#architecture)
@@ -18,11 +16,10 @@ https://youtu.be/7yOmi4IX-Rs?si=_NGAHOomEPocRoqt
 - [Agent Descriptions](#agent-descriptions)
 - [Data Models](#data-models)
 - [Examples](#examples)
-- [Contributing](#contributing)
 
 ---
 
-## 🎯 Overview
+## Overview
 
 **Agentic AI Data Agent** is an intelligent system that processes natural language queries and routes them to specialized agents for execution. The main agent acts as an intelligent router that understands user intent and delegates tasks to either the **SQL Analyst Agent** (for database queries) or the **ETL Analyst Agent** (for data extraction and transformation operations).
 
@@ -35,7 +32,7 @@ This project showcases modern AI engineering practices including:
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 The system follows a hierarchical agent architecture:
 
@@ -71,7 +68,7 @@ The system follows a hierarchical agent architecture:
 
 ---
 
-## ✨ Features
+## Features
 
 ### Core Capabilities
 
@@ -103,7 +100,7 @@ The system follows a hierarchical agent architecture:
 
 ---
 
-## 📦 Prerequisites
+##  Prerequisites
 
 - Python 3.12+
 - PostgreSQL database (for SQL operations)
@@ -169,7 +166,7 @@ LLM_MODEL_HIGH=claude-3-opus
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Data_Agent/
@@ -206,7 +203,7 @@ Data_Agent/
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 ### LLM Selection (`utils/llm_pick.py`)
 
@@ -240,7 +237,7 @@ schema_info = db.schema_details("public")
 
 ---
 
-## 💻 Usage
+## Usage
 
 ### Running the Data Agent
 
@@ -305,7 +302,7 @@ python agents/etl_analyst.py
 
 ---
 
-## 🤖 Agent Descriptions
+## Agent Descriptions
 
 ### 1. **Data Agent (Main Router)**
 **File:** `agents/data_agent.py`
@@ -377,7 +374,7 @@ python agents/etl_analyst.py
 
 ---
 
-## 📊 Data Models
+## Data Models
 
 ### AgentSchema (SQL Agent State)
 ```python
@@ -415,7 +412,7 @@ class DataAgentSchema(BaseModel):
 
 ---
 
-## 📚 Examples
+## Examples
 
 ### Example 1: Database Query
 
@@ -465,26 +462,26 @@ class DataAgentSchema(BaseModel):
 
 ---
 
-## 🔐 Security Features
+## Security Features
 
-✅ **SQL Safety Validation**
+ **SQL Safety Validation**
 - Query inspection before execution
 - Blocks destructive operations
 - Database structure protection
 
-✅ **Safe Code Execution**
+ **Safe Code Execution**
 - Sandboxed Python code execution
 - Input validation
 - Error handling and reporting
 
-✅ **Environment Security**
+ **Environment Security**
 - Credentials stored in `.env` (not in code)
 - Sensitive data protection
 - Proper exception handling
 
 ---
 
-## 🛠️ Development
+## Development
 
 ### Adding a New Agent
 
@@ -516,7 +513,7 @@ Modify `utils/llm_pick.py` to adjust:
 
 ---
 
-## 📝 Environment Variables Reference
+## Environment Variables Reference
 
 | Variable | Description | Example |
 |----------|-------------|---------|
@@ -530,7 +527,7 @@ Modify `utils/llm_pick.py` to adjust:
 
 ---
 
-## 🚨 Troubleshooting
+## Troubleshooting
 
 ### Issue: "Database connection failed"
 **Solution:** Verify PostgreSQL is running and credentials in `.env` are correct
@@ -552,41 +549,3 @@ Modify `utils/llm_pick.py` to adjust:
 - **Database Optimization**: Add indexes for frequently queried columns
 - **API Rate Limiting**: Respect rate limits of external APIs
 - **Memory Usage**: Large dataset transformations may require optimization
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please ensure:
-
-1. Code follows existing style
-2. All agents have proper documentation
-3. New features include state schemas
-4. Security implications are considered
-5. Tests are added for new functionality
-
----
-
-## 📄 License
-
-This project is part of an AI engineering demonstration.
-
----
-
-## 👨‍💻 Author & Support
-
-For questions, issues, or suggestions, please refer to the project documentation or reach out to the development team.
-
----
-
-## 🎓 Learning Resources
-
-- [LangGraph Documentation](https://langchain-ai.github.io/langgraph/)
-- [LangChain Documentation](https://python.langchain.com/)
-- [Claude API Reference](https://docs.anthropic.com/)
-- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
-
----
-
-**Last Updated:** August 2026
-**Version:** 0.1.0
