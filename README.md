@@ -1,4 +1,4 @@
-# 🤖 Agentic AI - Data Agent
+# Agentic AI - Data Agent
 
 A sophisticated multi-agent system for intelligent data processing and analysis using LangGraph. This project demonstrates a complete implementation of an agentic architecture with specialized sub-agents for SQL operations and ETL workflows.
 
@@ -109,7 +109,7 @@ The system follows a hierarchical agent architecture:
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone and Setup Project
 
