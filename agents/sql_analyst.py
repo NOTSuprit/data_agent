@@ -52,7 +52,11 @@ def prompt_query_context(state: AgentSchema) -> AgentSchema:
     Unless user explicitly asks for specific number of rows, always limit the output to 10 rows.
     Note - Just generate the SQL query without any explanation or additional text because
     this query will be executed directly on the database. So, the output should be SQL
-    ready to be executed without any modifications.  
+    ready to be executed without any modifications.
+
+    If the user's question asks about database tables, columns, or schema,
+you MUST include ALL tables and ALL columns available in the provided
+schema. Do not summarize, omit, or truncate any tables or columns.  
     
     User's Original Query: {curated_question}
 
