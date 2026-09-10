@@ -1,0 +1,37 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.env
+
+
+# macOS
+.DS_Store
+
+# Generated ETL output (keep the folders via .gitkeep, ignore what's inside)
+data/extract/*
+data/transform/*
+!data/extract/.gitkeep
+!data/transform/.gitkeep
+
+# Debug/scratch files this project writes at runtime
+test_schema_details.txt
+data_agent_graph.png
+
+# Streamlit local secrets (if you ever create one to test secrets.toml locally)
+.streamlit/secrets.toml
+
+# Editor
+.vscode/
+.idea/
+
+# Caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
