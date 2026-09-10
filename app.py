@@ -186,6 +186,21 @@ st.markdown("""
         line-height: 1.5;
     }
 
+    .cursor {
+    display: inline-block;
+    animation: cursor-blink 1s steps(1) infinite;
+}
+
+@keyframes cursor-blink {
+    0%, 49% {
+        opacity: 1;
+    }
+
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
     .agent-description {
         color: var(--muted);
         font-size: 0.75rem;
@@ -449,7 +464,7 @@ is_active""",
 # ===========================================================================
 
 st.markdown(
-    '<div class="brand">agent<span>.chat</span> _</div>',
+    '<div class="brand">agent<span>.chat</span> <span class="cursor">_</span></div>',
     unsafe_allow_html=True
 )
 
